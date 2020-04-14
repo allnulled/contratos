@@ -1,0 +1,36 @@
+package package1
+ file "somefile.txt"
+
+process process1
+  file "x"
+  uses classes Class1, Class2
+  uses processes process1, process2
+  that receives parameter1, parameter2
+  that modifies parameter1, Class1.property
+  that returns output
+
+class A
+  file "class-a"
+  extends AncestorOfA
+  implements MutationOfA1, MutationOfA2
+  uses packages package1, package2, package3
+  uses classes Class1, Class2, Class3
+  uses processes process1, process2, process3
+  has 
+    static property property1 set to 100
+    property property2 set to 200
+    static method method1
+      uses packages package1
+      uses classes Class1, Class2
+      uses processes process1, process2
+      that receives parameter1, parameter2
+      that modifies parameter1, Class1.property
+      that returns output
+    method method2
+      uses packages package1
+      uses classes Class1, Class2
+      uses processes process1, process2
+      that receives parameter1, parameter2
+      that modifies parameter1, Class1.property
+      that returns output
+    described as a custom description.

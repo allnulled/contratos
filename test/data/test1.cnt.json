@@ -1,0 +1,36 @@
+[
+    {
+        "type": "class",
+        "class": "Clase",
+        "sentences": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    },
+    {
+        "type": "process",
+        "process": "Proceso",
+        "sentences": [
+            null,
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ]
+        ]
+    },
+    {
+        "type": "package",
+        "package": "Paquete",
+        "sentences": null
+    }
+]

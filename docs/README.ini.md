@@ -35,6 +35,8 @@ $ npm install -g contratos
 
 ## Get started
 
+### CLI usage
+
 Write a simple `contratos` script (`simple.cnt`):
 
 ```
@@ -51,7 +53,11 @@ $ contratos compile simple.cnt
 
 A `simple.cnt.json` will be created representing the `ast` of your script. And that is all.
 
-## Examples
+### API usage
+
+
+
+## Syntax examples
 
 These examples demonstrate all the available options per each idea: `package`, `class` and `process`.
 
@@ -103,15 +109,4 @@ class A
       that returns output
     described as a custom description.
 ```
-
-
-
-
-## Issues
-
-Please, send your issues and suggestions at the page of issues in the Github project, [here](https://github.com/allnulled/contratos/issues).
-
-## License
-
-This project is under [**WTFPL** or **do What The Fuck you want to Public License**](https://es.wikipedia.org/wiki/WTFPL), so do what you want with it.
 

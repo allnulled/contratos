@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+const pkg = require(__dirname + "/../package.json");
+const API = require(__dirname + "/../" + pkg.main);
+const args = require("yargs")
+	.version(pkg.version)
+	.usage("$0 <command> <arguments> [options]")
+	.command(
+		"compile <files..>",
+		"Compiles <cnt> files into <json>",
+		yargs => yargs.default("command", "compile")
+	)
+	.command(
+		"check <files..>",
+		"Checks if a <cnt> file is well-formed",
+		yargs => yargs.default("command", "check")
+	)
+	.command(
+		"watch <files..>",
+		"Watches files for changes",
+		yargs => yargs.default("command", "watch")
+	)
+	.option("debug", {
+		type: "boolean",
+		demand: false,
+		default: false,
+	})
+	.help();
+const { argv } = args;
+if(typeof argv.command !== "string" || (!argv.command in API)) {
+	args.showHelp();
+	console.log();
+	console.log("Error: command not found <" + argv.command + ">");
+	return;
+}
+try {
+	const data = API[argv.command](argv);
+	if(argv.debug) {
+		console.log("Output:", data);
+	}
+} catch(error) {
+	console.error(error);
+}

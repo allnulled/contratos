@@ -1,0 +1,52 @@
+{
+  "name": "contratos",
+  "version": "1.0.0",
+  "description": "contratos",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "bin": {
+    "contratos": "./bin/contratos"
+  },
+  "scripts": {
+    "dev": "nodemon -w src/*.js -x 'npm run test'",
+    "docs": "concat docs/README.ini.md docs/README.api.md docs/README.end.md -o README.md",
+    "build": "pegjs src/contratos.pegjs",
+    "test": "mocha --bail --sort test/*.test.js",
+    "upload": "git add . && git commit && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allnulled/contratos.git"
+  },
+  "keywords": [
+    "scripting",
+    "programming",
+    "contract",
+    "signature",
+    "firm"
+  ],
+  "author": "allnulled",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/allnulled/contratos/issues"
+  },
+  "homepage": "https://github.com/allnulled/contratos#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "concat": "^1.0.3",
+    "execute-command-sync": "^1.0.2",
+    "javadoc": "^2.0.0",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.3",
+    "nyc": "^15.0.1",
+    "pegjs": "^0.10.0"
+  },
+  "dependencies": {
+    "chokidar": "^3.3.1",
+    "glob": "^7.1.6",
+    "globby": "^11.0.0"
+  }
+}

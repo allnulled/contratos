@@ -1,0 +1,508 @@
+[
+    {
+        "type": "package",
+        "package": "package1",
+        "sentences": {
+            "type": "file",
+            "file": "\"somefile.txt\""
+        }
+    },
+    {
+        "type": "process",
+        "process": "process1",
+        "sentences": [
+            {
+                "type": "file",
+                "file": "\"x\""
+            },
+            [
+                null,
+                {
+                    "type": "uses class",
+                    "classes": {
+                        "type": [
+                            "variable reference list",
+                            "classes list"
+                        ],
+                        "variables": [
+                            {
+                                "type": [
+                                    "variable reference"
+                                ],
+                                "variable": "Class1"
+                            },
+                            {
+                                "type": [
+                                    "variable reference"
+                                ],
+                                "variable": "Class2"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "uses process",
+                    "processes": {
+                        "type": [
+                            "variable reference list",
+                            "processes list"
+                        ],
+                        "variables": [
+                            {
+                                "type": [
+                                    "variable reference"
+                                ],
+                                "variable": "process1"
+                            },
+                            {
+                                "type": [
+                                    "variable reference"
+                                ],
+                                "variable": "process2"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "receives",
+                    "values": [
+                        {
+                            "name": "parameter1",
+                            "type": null
+                        },
+                        {
+                            "name": "parameter2",
+                            "type": null
+                        }
+                    ]
+                },
+                {
+                    "type": "modifies",
+                    "values": {
+                        "type": [
+                            "variable reference list"
+                        ],
+                        "variables": [
+                            {
+                                "type": [
+                                    "variable reference"
+                                ],
+                                "variable": "parameter1"
+                            },
+                            {
+                                "type": [
+                                    "variable reference"
+                                ],
+                                "variable": "Class1.property"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "returns",
+                    "value": {
+                        "name": "output",
+                        "type": null
+                    }
+                },
+                null
+            ]
+        ]
+    },
+    {
+        "type": "class",
+        "class": "A",
+        "sentences": [
+            {
+                "type": "file",
+                "file": "\"class-a\""
+            },
+            {
+                "type": "extends",
+                "class": {
+                    "type": [
+                        "variable reference"
+                    ],
+                    "variable": "AncestorOfA"
+                }
+            },
+            {
+                "type": "implements",
+                "classes": {
+                    "type": [
+                        "variable reference list"
+                    ],
+                    "variables": [
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "MutationOfA1"
+                        },
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "MutationOfA2"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "uses package",
+                "packages": {
+                    "type": [
+                        "variable reference list",
+                        "packages list"
+                    ],
+                    "variables": [
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "package1"
+                        },
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "package2"
+                        },
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "package3"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "uses class",
+                "classes": {
+                    "type": [
+                        "variable reference list",
+                        "classes list"
+                    ],
+                    "variables": [
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "Class1"
+                        },
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "Class2"
+                        },
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "Class3"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "uses process",
+                "processes": {
+                    "type": [
+                        "variable reference list",
+                        "processes list"
+                    ],
+                    "variables": [
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "process1"
+                        },
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "process2"
+                        },
+                        {
+                            "type": [
+                                "variable reference"
+                            ],
+                            "variable": "process3"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "has",
+                "members": [
+                    {
+                        "type": "member",
+                        "accessibility": "static property ",
+                        "variable": {
+                            "name": "property1",
+                            "type": null
+                        },
+                        "value": {
+                            "type": "set to",
+                            "value": "100"
+                        }
+                    },
+                    {
+                        "type": "member",
+                        "accessibility": "property ",
+                        "variable": {
+                            "name": "property2",
+                            "type": null
+                        },
+                        "value": {
+                            "type": "set to",
+                            "value": "200"
+                        }
+                    },
+                    {
+                        "type": "method",
+                        "accessibility": "static method ",
+                        "method": {
+                            "name": {
+                                "name": "method1",
+                                "type": null
+                            },
+                            "signatures": [
+                                {
+                                    "type": "uses package",
+                                    "packages": {
+                                        "type": [
+                                            "variable reference list",
+                                            "packages list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "package1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "uses class",
+                                    "classes": {
+                                        "type": [
+                                            "variable reference list",
+                                            "classes list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "Class1"
+                                            },
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "Class2"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "uses process",
+                                    "processes": {
+                                        "type": [
+                                            "variable reference list",
+                                            "processes list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "process1"
+                                            },
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "process2"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "receives",
+                                    "values": [
+                                        {
+                                            "name": "parameter1",
+                                            "type": null
+                                        },
+                                        {
+                                            "name": "parameter2",
+                                            "type": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "modifies",
+                                    "values": {
+                                        "type": [
+                                            "variable reference list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "parameter1"
+                                            },
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "Class1.property"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "returns",
+                                    "value": {
+                                        "name": "output",
+                                        "type": null
+                                    }
+                                },
+                                null
+                            ]
+                        }
+                    },
+                    {
+                        "type": "method",
+                        "accessibility": "method ",
+                        "method": {
+                            "name": {
+                                "name": "method2",
+                                "type": null
+                            },
+                            "signatures": [
+                                {
+                                    "type": "uses package",
+                                    "packages": {
+                                        "type": [
+                                            "variable reference list",
+                                            "packages list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "package1"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "uses class",
+                                    "classes": {
+                                        "type": [
+                                            "variable reference list",
+                                            "classes list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "Class1"
+                                            },
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "Class2"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "uses process",
+                                    "processes": {
+                                        "type": [
+                                            "variable reference list",
+                                            "processes list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "process1"
+                                            },
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "process2"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "receives",
+                                    "values": [
+                                        {
+                                            "name": "parameter1",
+                                            "type": null
+                                        },
+                                        {
+                                            "name": "parameter2",
+                                            "type": null
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "modifies",
+                                    "values": {
+                                        "type": [
+                                            "variable reference list"
+                                        ],
+                                        "variables": [
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "parameter1"
+                                            },
+                                            {
+                                                "type": [
+                                                    "variable reference"
+                                                ],
+                                                "variable": "Class1.property"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "returns",
+                                    "value": {
+                                        "name": "output",
+                                        "type": null
+                                    }
+                                },
+                                {
+                                    "type": "description",
+                                    "value": "a custom description."
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
