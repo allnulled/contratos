@@ -1,7 +1,3 @@
-const fs = require("fs");
-const path = require("path");
-const chokidar = require("chokidar");
-const globby = require("globby");
 const ContratosParser = require(__dirname + "/contratos.js");
 
 class Contratos {
@@ -21,6 +17,10 @@ class Contratos {
 	}
 
 	static check(options = {}) {
+		const fs = require("fs");
+		const path = require("path");
+		const chokidar = require("chokidar");
+		const globby = require("globby");
 		if(!options.files) {
 			throw new Error("Parameter <files> required to <check>");
 		}
@@ -44,6 +44,10 @@ class Contratos {
 	}
 
 	static compile(options = {}) {
+		const fs = require("fs");
+		const path = require("path");
+		const chokidar = require("chokidar");
+		const globby = require("globby");
 		if(!options.files) {
 			throw new Error("Parameter <files> required to <compile>");
 		}
@@ -71,6 +75,10 @@ class Contratos {
 	}
 
 	static watch(options = {}) {
+		const fs = require("fs");
+		const path = require("path");
+		const chokidar = require("chokidar");
+		const globby = require("globby");
 		if(!options.files) {
 			throw new Error("Parameter <files> required to <watch>");
 		}
