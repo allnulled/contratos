@@ -4,10 +4,13 @@ Programming language to create and bind packages, classes and processes.
 
 ## Index
 
-1. The idea
-2. Playground
-3. Installation
-4. Get started
+1. [The idea](#the_idea)
+2. [Playground](#playground)
+3. [Installation](#installation)
+4. [Get started](#get_started)
+5. [Examples](#examples)
+6. [Issues](#issues)
+7. [License](#license)
 
 ## The idea
 
@@ -35,6 +38,8 @@ $ npm install -g contratos
 
 ## Get started
 
+### CLI usage
+
 Write a simple `contratos` script (`simple.cnt`):
 
 ```
@@ -51,7 +56,11 @@ $ contratos compile simple.cnt
 
 A `simple.cnt.json` will be created representing the `ast` of your script. And that is all.
 
-## Examples
+### API usage
+
+
+
+## Syntax examples
 
 These examples demonstrate all the available options per each idea: `package`, `class` and `process`.
 

@@ -1,6 +1,6 @@
 {
   "name": "contratos",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "contratos",
   "main": "src/index.js",
   "directories": {

@@ -4,10 +4,13 @@ Programming language to create and bind packages, classes and processes.
 
 ## Index
 
-1. The idea
-2. Playground
-3. Installation
-4. Get started
+1. [The idea](#the_idea)
+2. [Playground](#playground)
+3. [Installation](#installation)
+4. [Get started](#get_started)
+5. [Examples](#examples)
+6. [Issues](#issues)
+7. [License](#license)
 
 ## The idea
 
